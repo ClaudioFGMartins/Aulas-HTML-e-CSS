@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula de HTML e CSS</title>
+</head>
+<body>
+
+    <form>
+        <h3>Cadastro de Perfil</h3>
+        <!-- <form> -> Container do Formulário -->
+        <!-- <input> <textarea>, <select> -> Campo de formulario  -->
+        <!-- <label> -> Rotulo de um campo do formulário -->
+            <form>
+
+            <fieldset>
+                <label for="cNome">Nome:</label>
+                <input type="text" id="cNome"> <br>
+                
+                <label for="cSenha">Senha:</label> 
+                <input type="password" id="cSenha"> <br>
+                
+                <label for="cEmail">E-mail:</label>
+                <input type="email" id="cEmail"> <br>
+                
+                <label for="cTelefone">Telefone:</label>
+                <input type="tel" id="cTelefone"> <br>
+                
+                <label for="cInsta">URl do instragrm:</label>
+                <input type="url" id="cInsta"> <br>
+                
+                Idade:<label for="cInsta">URl do instragrm:</label>
+                <input type="number" min="0" max="130" value="18"> <br>
+                
+                
+                Data de Nascimento:<label for="cInsta">URl do instragrm:</label>
+                <input type="date"> <br>
+                
+                Hora de Nascimento:<label for="cInsta">URl do instragrm:</label>
+                <input type="time"> <br>
+                
+                Data e Hora de nascimento:<label for="cInsta">URl do instragrm:</label>
+                <input type="datetime-local"> <br>
+                
+                
+                Foto de Perfil: <!--Não fiz Label por causa do botão-->
+                <input type="file" mutiple accept=".jpeg,.png"> <br>
+            </fieldset>
+
+            <fieldset>
+                Interesses:<label for="cInsta">URl do instragrm:</label>
+                Humanas <input type="checkbox">
+                Extas <input type="checkbox">
+                Linguagem <input type="checkbox">
+                Ciências <input type="checkbox">
+                <br>
+                
+                
+                Escolha sua cor favorita:<label for="cInsta">URl do instragrm:</label>
+                <input type="color"> <br>
+                
+                Sexo:<label for="cInsta">URl do instragrm:</label>
+                <input type="radio" name="sexo">Masculino.
+                <input type="radio" name="sexo">Feminino.
+                <br>
+                
+                Nível de Inglês:<!--Aqui não precisa de Label-->
+                1 <input type="range" min="0" max="5">5 <br>
+                Escondido:(Veja no inspencionar)
+                <input type="hidden" value="78"> <br>
+                
+                
+                Conte um pouco sobre você:<br>
+                <textarea cols="30" rows="5"></textarea> <br>
+                <select>
+                    <option disabled selected>Selecione uma Opção</option>
+                    <option>Ensino Fundamental Completo</option>
+                    <option>Ensino Medio Completo</option>
+                    <option>Ensino Superior Completo</option>
+                </select> <br>
+
+                <button type="submit" value="Enviar">Enviar</button> <!-- Submeter-->
+                <button type="button">Nao faz nada</button>
+                <button type="reset">Reinicar</button>
+            </fieldset>
+
+        </form>
+
+
+    </form>
+    
+</body>
+</html>
