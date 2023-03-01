@@ -1,0 +1,56 @@
+/* 
+    Flex-Box -> Caixa Flexivel
+    vontainer
+    items / content
+    direção
+*/
+
+.border {
+    padding: 0;
+    border: 2px solid black;
+}
+
+.container {
+    width: 50%;
+    height: 300px;
+
+    display: flex; /*Container*/
+     /* Direção dos items do container */
+    align-items: flex-start;
+    /*Direção dod items do container*/ 
+    flex-direction: row; /*row(linha), colun (coluna), row-resverse, colum-reverse*/
+    /* Alinhamento do conteudo seguindo a direção definida */
+    /* Alinhamento dos items seguindo a direção perpendicular a direção definida */
+    justify-content: space-evenly; /*flex-start, flex-end*/
+
+    align-items: center;/* flex-start, flex-end, center, stretch */
+}
+
+.container-2 {
+    width: 50%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    /* Quebra de linha/coluna dos conteudos */
+    flex-wrap: wrap; /* nowrap, wrap */
+
+    justify-content: center;
+
+    align-content: center;
+
+    gap: 20px;
+
+}
+
+.container-3 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px
+}
+
+.container-3 img {
+    /* Crescimento flexicivel */
+    flex-grow: 1;
+}
